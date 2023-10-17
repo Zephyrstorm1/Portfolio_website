@@ -336,7 +336,7 @@ nav ul li {
 }
 
 .dark-mode .contact-form-container {
-  background-color: #000000; /* Background color for dark mode contact form */
+  background-color: #333; /* Background color for dark mode contact form */
   color: #fff; /* Text color for dark mode contact form */
 }
 
@@ -347,6 +347,31 @@ nav ul li {
 .dark-mode .input-field {
   border-color: var(--secondary-color); /* Input field border color for dark mode */
 }
+
+/* Apply dark mode styles to the submit button */
+.dark-mode .submit-btn {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: #fff;
+}
+
+/* Apply dark mode styles to the name, email, and message input fields */
+.dark-mode .input-field {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .input-field::placeholder {
+  color: var(--secondary-color);
+}
+
+.dark-mode .submit-btn:hover {
+  background-color: #fff;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
 
 
 .socials {
