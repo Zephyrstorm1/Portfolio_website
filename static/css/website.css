@@ -240,7 +240,20 @@ nav a:hover {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+  color: var(--primary-color); /* Text color for light mode */
 }
+
+/* Dark Mode Styles */
+.dark-mode .projects {
+  background-color: #000; /* Background color for dark mode */
+}
+
+.dark-mode .project-card {
+  background-color: #333; /* Background color for dark mode card */
+  color: #fff; /* Text color for dark mode card */
+}
+
+
 .contact {
   margin-top: 2rem;
 }
