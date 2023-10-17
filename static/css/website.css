@@ -127,25 +127,33 @@ nav ul li {
   padding: 0.3rem 0;
 }
 
+/* Light Mode Styles */
 .more-about {
-    background-color: var(--bg-color);
-    padding: 1rem 0; 
-    box-shadow: 0 3px 10px var(--primary-shadow); 
-    border-radius: 10px; 
-    max-width: 1300px; 
-    margin: 0 auto; 
-  }
-  
-  .more-about h2 {
-    margin-bottom: var(--bottom-margin);
-    text-align: center;
-  }
-  
-  .more-about p {
-    line-height: var(--line-height);
-    padding: 0.4rem;
-  }
-  
+  background-color: var(--bg-color);
+  padding: 1rem 0; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px; 
+  max-width: 500px; 
+  margin: 0 auto; 
+  color: #000; 
+}
+
+.more-about h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.more-about p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+
+/* Dark Mode Styles */
+.dark-mode .more-about {
+  background-color: #000; 
+  color: #fff; 
+}
+
 
 
 .skills {
@@ -167,13 +175,22 @@ nav ul li {
   width: 11.875rem;
   height: 11.25rem;
 }
+/* Light Mode Styles */
 .icon-card {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
   padding: 20px;
   margin: 10px;
+  color: #000; /* Text color for light mode */
 }
+
+/* Dark Mode Styles */
+.dark-mode .icon-card {
+  background-color: #000; /* Background color for dark mode */
+  color: #fff; /* Text color for dark mode */
+}
+
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
@@ -388,6 +405,39 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Main Content Container Styles */
+#content-container {
+  /* ... (other styles for light mode) ... */
+}
+
+/* Dark Mode Styles */
+#content-container.dark-mode {
+  background-color: #000; /* Background color for dark mode */
+  color: #fff; /* Text color for dark mode */
+}
+
+/* Dark Mode Toggle Button Styles */
+#dark-mode-toggle {
+  /* ... (styles for light mode) ... */
+}
+
+#dark-mode-toggle.dark-mode {
+  background-color: #000; /* Button background color for dark mode */
+  color: #fff; /* Button text color for dark mode */
+  border: 2px solid #fff; /* Button border color for dark mode */
+}
+
+/* Card Styles for Dark Mode */
+.more-about-card {
+  background-color: #000; /* Card background color for dark mode */
+  color: #fff; /* Card text color for dark mode */
+  box-shadow: 0px 2px 15px 2px var(--secondary-shadow); /* Adjust shadow as needed */
+}
+
+.more-about h2, .more-about p {
+  color: #fff; /* Text color inside the card for dark mode */
 }
 
 
