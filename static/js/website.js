@@ -9,9 +9,15 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
-const darkModeToggle = document.getElementById('dark-mode-toggle');
+const darkModeSwitch = document.getElementById("dark-mode-switch");
 const body = document.body;
 
-darkModeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
+darkModeSwitch.addEventListener("change", () => {
+  if (darkModeSwitch.checked) {
+    // Enable dark mode
+    body.classList.add("dark-mode");
+  } else {
+    // Disable dark mode
+    body.classList.remove("dark-mode");
+  }
 });
