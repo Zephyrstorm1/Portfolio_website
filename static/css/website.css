@@ -314,6 +314,19 @@ footer {
   text-align: center;
   margin: 2rem 0 0;
 }
+
+/* Default (Light) Mode */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 /* Switch Styles */
 .switch {
   position: relative;
@@ -375,45 +388,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-/* Default (Light) Mode */
-body {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Dark Mode */
-.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-/* Default Button Style (Light Mode) */
-#dark-mode-toggle {
-  background-color: #fff; 
-  color: #000; 
-  border: 2px solid #000; 
-  padding: 10px 20px; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  transition: background-color 0.3s, color 0.3s;
-}
-
-/* Dark Mode Button Style */
-#dark-mode-toggle.dark-mode {
-  background-color: #000; 
-  color: #fff; 
-  border: 2px solid #fff; 
-}
-.more-about-card {
-  background-color: #000; 
-  color: #fff; 
-  box-shadow: 0px 2px 15px 2px var(--secondary-shadow); 
-}
-
-.more-about h2, .more-about p {
-  color: #fff; 
 }
 
 
