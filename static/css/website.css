@@ -55,6 +55,7 @@ section {
 /* CSS Resets end */
 
 /* Navbar */
+/* Light Mode Styles */
 nav {
   position: sticky;
   top: 0;
@@ -66,29 +67,33 @@ nav {
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav h1 {
-  color: var(--primary-color);
+  color: var(--primary-color); /* Text color for light mode */
 }
 
 nav a {
   color: var(--primary-color);
   transition: var(--transition);
 }
+
 nav a:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
 
-nav ul {
-  display: flex;
-  gap: 1.9rem;
+/* Dark Mode Styles */
+.dark-mode nav {
+  background-color: #000; /* Background color for dark mode */
+  color: #fff; /* Text color for dark mode */
 }
 
-nav ul li {
-  font-weight: var(--bold-font);
+.dark-mode nav a {
+  color: #fff; /* Text color for dark mode links */
 }
+
+.dark-mode nav a:hover {
+  color: var(--secondary-color);
+}
+
 
 .burger-menu {
   color: var(--primary-color);
