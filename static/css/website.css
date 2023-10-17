@@ -437,6 +437,31 @@ body {
   width: 60px;
   height: 34px;
 }
+.sun-icon {
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  font-size: 20px; /* Adjust the size as needed */
+  opacity: 1; /* Show the sun icon for light mode */
+}
+
+/* Moon Icon (for dark mode) */
+.moon-icon {
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  font-size: 20px; /* Adjust the size as needed */
+  opacity: 0; /* Hide the moon icon initially for dark mode */
+}
+
+/* Apply styles for dark mode */
+input:checked + .slider .sun-icon {
+  opacity: 0; /* Hide the sun icon when dark mode is activated */
+}
+
+input:checked + .slider .moon-icon {
+  opacity: 1; /* Show the moon icon when dark mode is activated */
+}
 
 .switch input { 
   opacity: 0;
