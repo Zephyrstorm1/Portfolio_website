@@ -326,5 +326,23 @@ body {
   color: #ffffff;
 }
 
+/* Default Button Style (Light Mode) */
+#dark-mode-toggle {
+  background-color: #fff; /* Background color for light mode */
+  color: #000; /* Text color for light mode */
+  border: 2px solid #000; /* Border color for light mode */
+  padding: 10px 20px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition animation */
+}
+
+/* Dark Mode Button Style */
+#dark-mode-toggle.dark-mode {
+  background-color: #000; /* Background color for dark mode */
+  color: #fff; /* Text color for dark mode */
+  border: 2px solid #fff; /* Border color for dark mode */
+}
+
 
 
