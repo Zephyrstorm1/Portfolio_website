@@ -134,13 +134,13 @@ nav a:hover {
 
 /* Light Mode Styles */
 .more-about {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color); 
   padding: 1rem 0; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
   border-radius: 10px; 
   max-width: 500px; 
   margin: 0 auto; 
-  color: #000; 
+  color: #000;
 }
 
 .more-about h2 {
@@ -324,7 +324,7 @@ nav a:hover {
 }
 
 .dark-mode .contact-form-container {
-  background-color: #333; /* Background color for dark mode contact form */
+  background-color: #000000; /* Background color for dark mode contact form */
   color: #fff; /* Text color for dark mode contact form */
 }
 
@@ -366,12 +366,20 @@ nav a:hover {
 /* Scroll to top button ends */
 
 /* Footer section */
+/* Light Mode Styles */
 footer {
   background-color: var(--bg-color);
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
 }
+
+/* Dark Mode Styles */
+.dark-mode footer {
+  background-color: #000; /* Background color for dark mode */
+  color: #fff; /* Text color for dark mode */
+}
+
 
 /* Default (Light) Mode */
 body {
@@ -470,16 +478,7 @@ input:checked + .slider:before {
   border: 2px solid #fff; /* Button border color for dark mode */
 }
 
-/* Card Styles for Dark Mode */
-.more-about-card {
-  background-color: #000; /* Card background color for dark mode */
-  color: #fff; /* Card text color for dark mode */
-  box-shadow: 0px 2px 15px 2px var(--secondary-shadow); /* Adjust shadow as needed */
-}
 
-.more-about h2, .more-about p {
-  color: #fff; /* Text color inside the card for dark mode */
-}
 
 
 
