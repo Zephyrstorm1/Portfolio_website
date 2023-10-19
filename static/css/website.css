@@ -539,3 +539,6 @@ input:checked + .slider:before {
   color: #fff; /* Button text color for dark mode */
   border: 2px solid #fff; /* Button border color for dark mode */
 }
+@media screen and (max-width: 720px) {
+  /*changes reflects on screen with a width of 720px and below*/
+}
